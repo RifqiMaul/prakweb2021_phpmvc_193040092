@@ -14,6 +14,7 @@ class App{
         if ($url == NULL) {
             $url = [$this->controllers];
         }
+        
         if(file_exists('../app/controllers/' . $url[0] . '.php')){
             $this->controller = $url[0];
             unset($url[0]);
